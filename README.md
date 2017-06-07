@@ -20,7 +20,7 @@ public class QuickSortTest {
 			arrayList.add(input[i]);
 		}
 		
-    // arrayListOutput = QuickSort.recursiveSort(arrayL;ist)
+		// arrayListOutput = QuickSort.recursiveSort(arrayL;ist)
 		arrayListOutput = QuickSort.nonRecursive(arrayList);
 		for(Integer intValue : arrayListOutput ) {
 			System.out.print(" " + intValue);
