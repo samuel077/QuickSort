@@ -43,7 +43,6 @@ public class QuickSort {
 		stack.push(a.size());
 		
 		while(!stack.isEmpty()) {
-			System.out.println(a.toString());
 			int end = (int) stack.pop();
 			int start = (int) stack.pop();
 			
@@ -54,8 +53,6 @@ public class QuickSort {
 			int p = start + ((end-start)/2);
 			// get the partition of next subset.
 			p = partition(a, p , start, end);
-			
-			System.out.println("pivot = " + p);
 			
 			// large 
 			stack.push(p+1);
@@ -88,9 +85,7 @@ public class QuickSort {
 				// find the last one exception. 
 				high--;
 			} else {
-				System.out.println("before swap" + a.toString());
 				swap(a, low, high);
-				System.out.println("After swap" + a.toString());
 			}
 		}
 		
